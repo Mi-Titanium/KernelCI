@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "kernel",
-      "repo": "https://github.com/Mi-Eldarion/msm-4.19",
+      "repo": "https://github.com/Mi-Titanium/msm-4.19",
       "branch": "ysl/master",
       "device": "ysl",
       "defconfig": "vendor/msm8953-perf_defconfig"
