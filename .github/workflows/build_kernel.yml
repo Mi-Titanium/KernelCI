@@ -99,7 +99,7 @@ jobs:
 
       - name: "Clone kernel-techpack source"
         run: |
-          git clone https://github.com/Mi-Eldarion/kernel_techpack_ysl -b K4.19 --depth=1 kernel/techpack/mi8953
+          git clone https://github.com/Mi-Titanium/techpack_xiaomi-msm8953 -b main --depth=1 kernel/techpack/xiaomi-msm8953
 
       - name: "Clone Clang"
         env:
