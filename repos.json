@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "kernel",
-      "repo": "https://github.com/Mi-Titanium/msm-4.19",
-      "branch": "ysl/master",
-      "device": "ysl",
-      "defconfig": "vendor/msm8953-perf_defconfig"
+      "repo": "https://github.com/Alts-Dump/kernel_xiaomi_sweet2",
+      "branch": "Nightmare-KSU",
+      "device": "sweet",
+      "defconfig": "vendor/sdmsteppe_defconfig"
   },
     "withKernelSU": true,
     "toolchains": [
