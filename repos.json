@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "kernel",
-      "repo": "https://github.com/Mi-Titanium/kernel_xiaomi_vince",
-      "branch": "main",
+      "repo": "https://github.com/Mi-Titanium/vince_4.19",
+      "branch": "caf_base",
       "device": "vince",
-      "defconfig": "vendor/vince_defconfig"
+      "defconfig": "vendor/msm8953-perf_defconfig"
   },
     "toolchains": [
       {
