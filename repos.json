@@ -3,8 +3,8 @@
     "kernelSource": {
       "name": "kernel",
       "repo": "https://github.com/Mi-Titanium/msm-4.9",
-      "branch": "main",
-      "device": "vince",
+      "branch": "mititanium/bringup",
+      "device": "vince-titanium",
       "defconfig": "mititanium-perf_defconfig"
   },
     "toolchains": [
