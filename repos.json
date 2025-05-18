@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "kernel",
-      "repo": "https://github.com/Mi-Titanium/msm-4.9",
-      "branch": "mititanium/bringup",
+      "repo": "https://github.com/RennAlt-at-25/kernel_xiaomi_vince",
+      "branch": "vince/dts/fix",
       "device": "vince-titanium",
-      "defconfig": "mititanium-perf_defconfig"
+      "defconfig": "vendor/vince_defconfig"
   },
     "toolchains": [
       {
