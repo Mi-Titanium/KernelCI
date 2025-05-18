@@ -93,14 +93,6 @@ jobs:
 
           echo "Clone kernel source => ($KERNEL_REPO)"
 
-      - name: "Clone kernel-dts source"
-        run: |
-          git clone https://github.com/Mi-Titanium/kernel_devicetree_xiaomi-msm8953 -b 4.9 --depth=1 kernel/arch/arm64/boot/dts/xiaomi-titanium
-
-      - name: "Clone kernel-techpack source"
-        run: |
-          git clone https://github.com/Mi-Titanium/techpack_xiaomi-titanium -b main --depth=1 kernel/techpack/xiaomi-titanium
-
       - name: "Clone Clang"
         env:
           toolchains: "${{ toJSON(matrix.repos.toolchains) }}"
