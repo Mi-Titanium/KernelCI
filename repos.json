@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "kernel",
-      "repo": "https://github.com/Mi-Titanium/vince_4.19",
-      "branch": "caf_base",
+      "repo": "https://github.com/RenzAlt/vince_4.19",
+      "branch": "vince/bringup",
       "device": "vince",
       "defconfig": "vendor/msm8953-perf_defconfig"
   },
