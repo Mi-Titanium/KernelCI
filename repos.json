@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "kernel",
       "repo": "https://github.com/RenzAlt/kernel_xiaomi_vince",
-      "branch": "fixup/4.9",
+      "branch": "ts/5.10",
       "device": "vince-titanium",
       "defconfig": "vendor/vince_defconfig"
   },
