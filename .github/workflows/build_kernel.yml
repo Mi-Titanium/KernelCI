@@ -51,6 +51,7 @@ jobs:
       builddate: "${{ needs.Set-repos.outputs.builddate }}"
 
       KERNEL_NAME: ${{ matrix.repos.kernelSource.name }}
+      KERNEL_DIR: ${{ matrix.repos.kernelSource.dir }}
       KERNEL_REPO: ${{ matrix.repos.kernelSource.repo }}
       KERNEL_BRANCH: ${{ matrix.repos.kernelSource.branch }}
       KERNEL_DEVICE: ${{ matrix.repos.kernelSource.device }}
@@ -89,7 +90,7 @@ jobs:
 
       - name: "Clone kernel source => (${{ env.KERNEL_REPO }})"
         run: |
-          git clone --recursive --depth=1 -j $(nproc) --branch $KERNEL_BRANCH $KERNEL_REPO $KERNEL_NAME
+          git clone --recursive --depth=1 -j $(nproc) --branch $KERNEL_BRANCH $KERNEL_REPO $KERNEL_DIR
 
           echo "Clone kernel source => ($KERNEL_REPO)"
 
@@ -183,7 +184,7 @@ jobs:
           echo "args=$args" >> $GITHUB_OUTPUT
 
       - name: "Make defconfig"
-        working-directory: ${{ env.KERNEL_NAME }}
+        working-directory: ${{ env.KERNEL_DIR }}
         env:
           args: ${{ steps.generate-args.outputs.args }}
           arch: ${{ steps.generate-args.outputs.ARCH }}
@@ -201,7 +202,7 @@ jobs:
           export DTC_EXT=/usr/bin/dtc
 
       - name: "Build kernel"
-        working-directory: ${{ env.KERNEL_NAME }}
+        working-directory: ${{ env.KERNEL_DIR }}
         env:
           args: ${{ steps.generate-args.outputs.args }}
         run: |
