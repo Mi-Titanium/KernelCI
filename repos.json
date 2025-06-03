@@ -2,6 +2,7 @@
   {
     "kernelSource": {
       "name": "kernel",
+      "dir": "kernel/xiaomi/msm8953",
       "repo": "https://github.com/RenzAlt/kernel_xiaomi_vince",
       "branch": "ts/5.10",
       "device": "vince-titanium",
