@@ -88,6 +88,10 @@ jobs:
 
           echo "Setup Anykernel3 => ($ANYKERNEL_REPO)"
 
+      - name: "Clone module source"
+        run: |
+          git clone https://github.com/RenzAlt/mititanium-module -b main --depth=1 hardware/mititanium-module
+
       - name: "Clone kernel source => (${{ env.KERNEL_REPO }})"
         run: |
           git clone --recursive --depth=1 -j $(nproc) --branch $KERNEL_BRANCH $KERNEL_REPO $KERNEL_DIR
